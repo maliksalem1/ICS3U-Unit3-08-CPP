@@ -7,8 +7,8 @@
 #include <iostream>
 #include <string>
 
-int yearInt;
-std::string yearString;
+    int yearInt;
+    std::string yearString;
 
 int main() {
     // finds if the chosen year is a leap year or not
@@ -20,15 +20,15 @@ int main() {
         yearInt = std::stoi(yearString);
         if (yearInt > 0) {
             if (yearInt % 4 == 0) {
-                if (yearInt % 100 != 0) {
-                    std::cout << "" << yearString << " is a leap year." << std::endl;
-                } else if (yearInt % 400 != 0) {
-                    std::cout << "" << yearInt << " is not a leap year." << std::endl;
-                } else {
-                    std::cout << "" << yearString << " is a leap year." << std::endl;
-                }
+            if (yearInt % 100 != 0) {
+            std::cout << "" << yearString << " is a leap year." << std::endl;
+            } else if (yearInt % 400 != 0) {
+            std::cout << "" << yearInt << " is not a leap year." << std::endl;
             } else {
-                std::cout << "" << yearString << " is not a leap year." << std::endl;
+            std::cout << "" << yearString << " is a leap year." << std::endl;
+             }
+            } else {
+        std::cout << "" << yearString << " is not a leap year." << std::endl;
             }
         } else {
             std::cout << yearString << " is not a valid year." << std::endl;
